@@ -1,0 +1,361 @@
+/* Google Fonts Import Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+body {
+	background-image: url("../images/admin-home.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 98vh;
+}
+
+.sidebar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 260px;
+	background-image: linear-gradient(to bottom, #40d0fc 70%, rgb(46, 79, 179));
+	z-index: 100;
+	transition: all 0.5s ease;
+}
+
+.sidebar.close {
+	width: 78px;
+}
+
+.sidebar .logo-details {
+	height: 60px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-right: 30px;
+}
+
+.sidebar .logo-details a img {
+	display: none;
+	transition: all 0.5s ease;
+	transition-delay: 1s;
+}
+
+.sidebar.close .logo-details .logo_name {
+	display: none;
+}
+
+.sidebar.close .logo-details a img {
+	display: block;
+	margin-left: 30px;
+	height: 60px;
+}
+
+.sidebar .logo-details .logo_name {
+	transition: 0.3s ease;
+	transition-delay: 0.1s;
+	cursor: pointer;
+}
+
+.sidebar .nav-links {
+	height: 100%;
+	padding: 30px 0 150px 0;
+	overflow: auto;
+	margin-top: 110px;
+}
+
+.sidebar.close .nav-links {
+	overflow: visible;
+}
+
+.sidebar .nav-links::-webkit-scrollbar {
+	display: none;
+}
+
+.sidebar .nav-links li {
+	position: relative;
+	list-style: none;
+	transition: all 0.4s ease;
+}
+
+.sidebar .nav-links li:hover {
+	background: royalblue;
+}
+
+.sidebar .nav-links li .iocn-link {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.sidebar.close .nav-links li .iocn-link {
+	display: block
+}
+
+.sidebar .nav-links li i {
+	height: 50px;
+	min-width: 78px;
+	text-align: center;
+	line-height: 50px;
+	color: #fff;
+	font-size: 20px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.sidebar .nav-links li.showMenu i.arrow {
+	transform: rotate(-180deg);
+}
+
+.sidebar.close .nav-links i.arrow {
+	display: none;
+}
+
+.sidebar .nav-links li a {
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+}
+
+.sidebar .nav-links li a .link_name {
+	font-size: 18px;
+	font-weight: 400;
+	color: #fff;
+	transition: all 0.4s ease;
+}
+
+.sidebar.close .nav-links li a .link_name {
+	opacity: 0;
+	pointer-events: none;
+}
+
+.sidebar .nav-links li .sub-menu {
+	padding: 6px 6px 14px 80px;
+	margin-top: -10px;
+	background: royalblue;
+	display: none;
+}
+
+.sidebar .nav-links li.showMenu .sub-menu {
+	display: block;
+}
+
+.sidebar .nav-links li .sub-menu a {
+	color: #fff;
+	font-size: 15px;
+	padding: 5px 0;
+	white-space: nowrap;
+	opacity: 0.6;
+	transition: all 0.3s ease;
+}
+
+.sidebar .nav-links li .sub-menu a:hover {
+	opacity: 1;
+}
+
+.sidebar.close .nav-links li .sub-menu {
+	position: absolute;
+	left: 100%;
+	top: -10px;
+	margin-top: 0;
+	padding: 10px 20px;
+	border-radius: 0 6px 6px 0;
+	opacity: 0;
+	display: block;
+	pointer-events: none;
+	transition: 0s;
+}
+
+.sidebar.close .nav-links li:hover .sub-menu {
+	top: 0;
+	opacity: 1;
+	pointer-events: auto;
+	transition: all 0.4s ease;
+}
+
+.sidebar .nav-links li .sub-menu .link_name {
+	display: none;
+}
+
+.sidebar.close .nav-links li .sub-menu .link_name {
+	font-size: 18px;
+	opacity: 1;
+	display: block;
+}
+
+.sidebar .nav-links li .sub-menu.blank {
+	opacity: 1;
+	pointer-events: auto;
+	padding: 3px 20px 6px 16px;
+	opacity: 0;
+	pointer-events: none;
+}
+
+.sidebar .nav-links li:hover .sub-menu.blank {
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.sidebar .log-out-cont {
+	position: fixed;
+	bottom: 0;
+	width: 260px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	background-color: royalblue;
+	padding: 12px 0;
+	transition: all 0.5s ease;
+	height: 60px;
+}
+
+.sidebar.close .log-out-cont {
+	background: none;
+}
+
+.sidebar.close .log-out-cont {
+	width: 78px;
+}
+
+.sidebar .log-out-cont .log-out-img {
+	display: flex;
+	align-items: center;
+	margin-right: 25px;
+}
+
+.sidebar .log-out-cont img {
+	height: 52px;
+	width: 52px;
+	object-fit: cover;
+	border-radius: 16px;
+	margin: 5px 12px 5px 14px;
+	transition: all 0.5s ease;
+	cursor: pointer;
+	padding: 8px;
+}
+
+.sidebar.close .log-out-cont img {
+	padding: 5px;
+}
+
+.sidebar .log-out-cont .log-out-text {
+	color: rgb(253, 247, 247);
+	font-size: 20px;
+	font-weight: 700;
+	white-space: nowrap;
+	cursor: pointer;
+}
+
+.sidebar.close .log-out-cont i, .sidebar.close .log-out-cont .log-out-text,
+	.sidebar.close .log-out-cont .job {
+	display: none;
+}
+
+body {
+	background-image: url("../images/admin-home.jpg");
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.right-space {
+	position: relative;
+	height: 100%;
+	left: 260px;
+	width: calc(100% - 260px);
+	transition: all 0.5s ease;
+	padding: 5px 7px 12px 7px;
+}
+
+.sidebar.close ~.right-space {
+	left: 78px;
+	width: calc(100% - 78px);
+	transition: all 0.5s ease;
+}
+
+.right-content {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	border-radius: 4px;
+	margin-top: 0px;
+}
+
+.right-space .right-content .bx-menu, .right-space .right-content .text
+	{
+	color: white;
+	font-size: 35px;
+}
+
+.right-space .right-content .bx-menu {
+	cursor: pointer;
+	margin-right: 10px;
+	color: black;
+}
+
+.right-space .right-content .welcome-text {
+	font-size: 26px;
+	font-weight: 600;
+	color: rgb(247, 166, 67);
+}
+
+/* text */
+/*
+.right-space .actions-text {
+
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: centers;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.right-space .actions-text span {
+  font-size: 20px;
+  font-weight: 500;
+ 
+}
+.right-space .actions-text ul {
+  list-style: square;
+}
+.right-space .actions-text ul li {
+  font-size: 20px;
+  font-weight: 200;
+  margin-top: 10px;
+}
+*/
+@media screen and (max-width: 400px) {
+	.sidebar {
+		width: 240px;
+	}
+	.sidebar.close {
+		width: 78px;
+	}
+	.sidebar .log-out-cont {
+		width: 240px;
+	}
+	.sidebar.close .log-out-cont {
+		background: none;
+	}
+	.sidebar.close .log-out-cont {
+		width: 78px;
+	}
+	.home-section {
+		left: 240px;
+		width: calc(100% - 240px);
+	}
+	.sidebar.close ~.home-section {
+		left: 78px;
+		width: calc(100% - 78px);
+	}
+}
