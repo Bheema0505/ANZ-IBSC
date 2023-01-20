@@ -1,0 +1,79 @@
+          body{
+    		  background-color: white !important;
+    		    background-image: none !important;
+    		}
+   			.table-container {
+                height: auto;
+                width: 95%;
+                display: flex;
+                justify-content: flex-start;
+                
+            }
+            
+
+            .emp-table {
+                background-color: white;
+                border-collapse: collapse;
+                font-size: 1em;
+                min-width: 400px;
+                width: 100%;
+                border-radius: 5px 5px 0px 0px;
+                overflow: hidden;
+                box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+                margin: 30px 10px 10px 50px;
+            }
+
+            .emp-table thead tr {
+                background-color: royalblue;
+                color: white;
+                text-align: left;
+                font-weight: bold;
+            }
+
+            .emp-table th,
+            .emp-table td {
+                padding: 12px 15px;
+            }
+
+            .emp-table tbody tr {
+                border-bottom: 1px solid #dddddd;
+            }
+
+            .emp-table tbody tr:nth-child(even) {
+                background-color: rgb(220, 236, 250);
+
+            }
+
+            .emp-table tbody tr:last-child {
+                border-bottom: 2px solid royalblue;
+            }
+            
+            .table-container .emp-table tbody tr td .btn-danger {
+				height: 35px !important;
+			    width: 110px;
+			    white-space: nowrap;
+			    font-size: 15px;
+			    text-align: center;
+				
+			}
+			td{
+				font-size: 15px;
+			} 
+			a{
+				text-decoration: none;
+			} 
+            .no-data-found {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: royalblue;
+	font-size: 1.4rem;
+	border: 2px solid cadetblue;
+	padding:25px;
+	text-align: center;
+	
+}
+            
+            
+            

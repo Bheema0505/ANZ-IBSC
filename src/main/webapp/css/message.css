@@ -1,0 +1,41 @@
+        .error-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: large;
+            flex-direction: column;
+            font-weight: 600;
+        }
+
+        .error-container .error-msg {
+            background-color: rgb(245, 198, 198);
+            min-width: 40%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+            color: orangered;
+            border-radius: 5px;
+
+        }
+
+        .error-container .error-msg p {
+            padding: 0;
+            margin: 0;
+        }
+
+        .error-container .info-msg {
+            background-color: royalblue;
+            min-width: 40%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+            color: white;
+            border-radius: 5px;
+        }
+
+        .error-container .info-msg p {
+            padding: 0;
+            margin: 0;
+        }

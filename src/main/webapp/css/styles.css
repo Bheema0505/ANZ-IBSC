@@ -1,0 +1,113 @@
+body{
+    background-image: url("../images/interface-bg.jpg");
+    background-repeat: repeat;
+    background-size: cover;
+    height:100vh;
+}
+.cont-user{
+    display: flex;
+    justify-content: center;
+}
+.cont-amin{
+    display: flex;
+    justify-content: center;
+}
+.img-logo{
+    height: 80px;
+    width: 200px;
+   
+}
+.logo-cont{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+.user-cont{
+    display: block;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin-top: 190px;
+    margin-bottom: 15px;
+}
+.admin-cont{
+    display: block;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin-top: 190px; 
+    margin-bottom: 15px;
+}
+.admin-img{
+    margin-left: 150px;
+
+}
+.user-img{
+    margin-right: 150px;
+
+}
+.admin-btn{
+    display: inline-block;
+    margin-left: 150px;
+
+}
+.user-btn{
+    display: inline-block;
+    margin-right: 150px;
+    
+}
+.admin-btn-cont{
+    display: flex;
+    justify-content: center;
+
+}
+.user-btn-cont{
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 750px) {
+    .admin-img{
+        margin-left: 50px;
+    
+    }
+    .user-img{
+        margin-right: 50px;
+    
+    }
+    .admin-btn{
+        display: inline-block;
+        margin-left: 50px;
+    
+    }
+    .user-btn{
+        display: inline-block;
+        margin-right: 50px;
+        
+    }
+
+}
+@media (min-width: 1160px) and (max-width: 1366px) {
+    .admin-img{
+        margin-left: 125px;
+    
+    }
+    .user-img{
+        margin-right: 125px;
+    
+    }
+    .admin-btn{
+        display: inline-block;
+        margin-left: 125px;
+    
+    }
+    .user-btn{
+        display: inline-block;
+        margin-right: 125px;
+        
+    }
+
+
+}
